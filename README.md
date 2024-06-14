@@ -44,3 +44,4 @@ sudo ip link set ligolo up
 
 ### Now you can access all the machines inside the above example network 10.10.10.148/24
 ```sudo nmap 10.10.10.0/24```
+![image](https://github.com/bhanugoudm041/Pivoting/assets/92798414/a703906f-b7db-4a33-b3fd-0bfed798101e)
