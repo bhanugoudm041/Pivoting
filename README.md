@@ -38,12 +38,12 @@ sudo ip link set ligolo up
 ```
 
 ### Now to pivot to above example network run
-```sudo ip route add ip/24 dev ligolo``` #ip here with above example 10.10.10.148/24
+```sudo ip route add ip/24 dev ligolo``` #ip here with above example 10.10.10.0/24
 
 ### Finally start the tunnel
 ```[Agent : client@client-virtual-machine] » tunnel_start```
 
-### Now you can access all the machines inside the above example network 10.10.10.148/24
+### Now you can access all the machines inside the above example network 10.10.10.0/24
 ```sudo nmap 10.10.10.0/24```
 ![image](https://github.com/bhanugoudm041/Pivoting/assets/92798414/a703906f-b7db-4a33-b3fd-0bfed798101e)
 
