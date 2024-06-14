@@ -1,5 +1,6 @@
 # Pivoting
 
+# Ligolo-ng
 ### Download link for ligolo-ng<br/>
 Link: https://github.com/nicocha30/ligolo-ng<br/>
 
@@ -45,3 +46,13 @@ sudo ip link set ligolo up
 ### Now you can access all the machines inside the above example network 10.10.10.148/24
 ```sudo nmap 10.10.10.0/24```
 ![image](https://github.com/bhanugoudm041/Pivoting/assets/92798414/a703906f-b7db-4a33-b3fd-0bfed798101e)
+
+
+# Sshuttle<br/>
+### Install sshuttle on kali or attacker machine<br/>
+``` sudo apt install sshuttle```
+### Start the tunnel<br/>
+```sudo sshuttle -r targetuser@targermachineip targetpivotnetwork```  #example: sudo sshuttle -r client@192.168.1.20 10.10.10.0/24<br/>
+### Now use curl or wget or browser to access pivoted network services<br/>
+curl http://pivotnetworkmachineip:port/   #example: curl http://10.10.10.132:80/<br/>
+![image](https://github.com/bhanugoudm041/Pivoting/assets/92798414/2d0da11f-063c-444b-a71c-17c8eec34ca9)
