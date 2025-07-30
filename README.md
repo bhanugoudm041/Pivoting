@@ -47,6 +47,20 @@ sudo ip link set ligolo up
 ```sudo nmap 10.10.10.0/24```
 ![image](https://github.com/bhanugoudm041/Pivoting/assets/92798414/a703906f-b7db-4a33-b3fd-0bfed798101e)
 
+# Transfer files or gain reverseshells from internal network to external network
+Once you create the tunnel to internal network through a pivot server(agent)</br>
+Run below command on server(attacker/proxy)</br>
+It will create a listener on agent or victim machine & forward the traffic to attacker machine when we tried accessing it from internal network with agentserver(pivotserver) ip & listener port we used.</br>
+```
+listener_add --addr agentip(pivot):agentlistenport --to proxyip(attacker):proxyport --tcp
+listener_list
+```
+<img width="3360" height="436" alt="image" src="https://github.com/user-attachments/assets/5332ff50-d398-490c-a68b-a4f29e1f4909" />
+Start the HTTP server or netcat listener on proxy port that we mentioned above</br>
+<img width="1525" height="146" alt="image" src="https://github.com/user-attachments/assets/96e6ddd7-0d1a-4762-aff4-053a06786c1a" />
+Now access the attacker machine from internal network with agentlistener ip&port
+<img width="2574" height="59" alt="image" src="https://github.com/user-attachments/assets/dd0d1399-9f0f-4f3c-aab4-ed7da9ddabdf" />
+
 
 # Sshuttle<br/>
 ### Install sshuttle on kali or attacker machine<br/>
@@ -56,3 +70,6 @@ sudo ip link set ligolo up
 ### Now use curl or wget or browser to access pivoted network services<br/>
 curl http://pivotnetworkmachineip:port/   #example: curl http://10.10.10.132:80/<br/>
 ![image](https://github.com/bhanugoudm041/Pivoting/assets/92798414/2d0da11f-063c-444b-a71c-17c8eec34ca9)
+
+
+
