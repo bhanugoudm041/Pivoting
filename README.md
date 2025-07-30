@@ -60,6 +60,7 @@ Start the HTTP server or netcat listener on proxy port that we mentioned above</
 <img width="1525" height="146" alt="image" src="https://github.com/user-attachments/assets/96e6ddd7-0d1a-4762-aff4-053a06786c1a" />
 Now access the attacker machine from internal network with agentlistener ip&port
 <img width="2574" height="59" alt="image" src="https://github.com/user-attachments/assets/dd0d1399-9f0f-4f3c-aab4-ed7da9ddabdf" />
+For reverseshell just generate the revershell with agentlistner(pivot) ip/port
 
 
 # Sshuttle<br/>
